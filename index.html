@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="game-controls">
+            <button id="vsPlayerBtn" class="button active">2 Players</button>
+            <button id="vsBotBtn" class="button">vs Bot</button>
+        </div>
+        <div id="difficulty-selector" class="difficulty-selector hidden">
+            <button id="easyBtn" class="difficulty-btn">Easy</button>
+            <button id="mediumBtn" class="difficulty-btn active">Medium</button>
+            <button id="hardBtn" class="difficulty-btn">Hard</button>
+        </div>
+        <div class="game-status">Player X's Turn</div>
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="resetBtn" class="button">New Game</button>
+    </div>
+    <div id="gameOverPopup" class="popup">
+        <div class="popup-content">
+            <h2>Game Over!</h2>
+            <p id="resultMessage"></p>
+            <button onclick="closePopup()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
